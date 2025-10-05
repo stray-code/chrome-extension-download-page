@@ -14,7 +14,10 @@ const manifest = defineManifest({
   action: {
     default_popup: 'src/popup/index.html',
   },
-  permissions: ['tabs', 'pageCapture'],
+  background: {
+    service_worker: 'src/background/background.ts',
+  },
+  permissions: ['tabs', 'pageCapture', 'contextMenus', 'downloads'],
 });
 
 export default defineConfig({

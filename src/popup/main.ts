@@ -15,7 +15,7 @@ const init = async () => {
   }
 
   // mhtmlはchrome.downloads.downloadが使えないため、通常の方法でダウンロード
-  const a = document.createElement("a");
+  const a = document.createElement('a');
   a.href = URL.createObjectURL(mhtmlBlob);
   a.download = `${tab.title}.mhtml`;
   a.click();

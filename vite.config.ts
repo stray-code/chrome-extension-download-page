@@ -5,7 +5,7 @@ const manifest = defineManifest({
   manifest_version: 3,
   name: 'Webサイトダウンロード',
   description: 'Webサイト（ページ）をダウンロードします。',
-  version: '1.0.1',
+  version: '1.1.0',
   icons: {
     16: 'img/icon16.png',
     48: 'img/icon48.png',

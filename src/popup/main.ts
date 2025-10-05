@@ -14,7 +14,7 @@ const init = async () => {
     return;
   }
 
-  // mhtmlはchrome.downloads.downloadが使えないため、通常の方法でダウンロード
+  // NOTE: mhtmlはchrome.downloads.downloadが使えないため、通常の方法でダウンロード
   const a = document.createElement('a');
   a.href = URL.createObjectURL(mhtmlBlob);
   a.download = `${tab.title}.mhtml`;

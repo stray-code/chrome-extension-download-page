@@ -11,17 +11,12 @@
     "prepare": "husky",
     "tsc": "tsc --skipLibCheck --noEmit"
   },
-  "lint-staged": {
-    "*.ts": [
-      "bash -c \"npm run format\"",
-      "bash -c \"npm run tsc\""
-    ]
-  },
   "devDependencies": {
     "@biomejs/biome": "^2.2.5",
     "@crxjs/vite-plugin": "^2.2.0",
     "@types/chrome": "^0.1.22",
     "husky": "^9.1.7",
+    "lefthook": "^1.13.6",
     "lint-staged": "^16.2.3",
     "typescript": "^5.9.3",
     "vite": "^7.1.9"
